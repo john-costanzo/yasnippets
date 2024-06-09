@@ -1,0 +1,140 @@
+# key: finance-meeting-notes
+# name: finance-meeting-notes
+# binding: C-c n
+# expand-env: ((yas-after-exit-snippet-hook (lambda () (org-table-map-tables 'org-table-align t))))
+# --
+*** `(with-temp-buffer
+  (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%B %Y" )(buffer-string))` Meeting Minutes
+
+{{{bnf_notes_title(`(with-temp-buffer (call-process "~/bin/pdate" nil t nil "-t" "'second Tuesday of the month'" "-f" "%A\\, %B %e\\, %Y" )(buffer-string))`)}}}
+**** Meeting Called to Order: 3:00 pm
+**** Committee Members
+\\\\
+***** Present:
+- Jim Ewing, /Chair/
+- Jo Ann Merfeld, /Co-chair and Board Treasurer/
+- Ulana Bilynsky, /Assistant Board Treasurer/
+- Linda Schwandt, /Assistant Board Treasurer/
+- Hal Manasa, /Board Liaison/
+- John Costanzo, /Secretary/
+- Louis Dixon
+- John Edwards
+- Jimmy McCutcheon
+- Dennis Thompson
+***** Absent:
+- 
+**** Approval of previous meeting’s minutes
+\\\\
+The committee approved the `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tue" "-M" "-1" "-f" "%B %Y" )(buffer-string))` meeting minutes as posted.
+**** Treasurer’s Report [Jo Ann Merfeld]
+    \\\\
+a) Treasurer\'s Monthly Report as of `(with-temp-buffer (call-process "~/bin/pdate" nil t nil "-t" "last day of previous month" "-f" "%B %e, %Y" )(buffer-string))`:
+      |                             |                        |     *Actual* |       *Actual* |       *Budget* |
+      |                             |                        |      *Month* |          *YTD* |          *YTD* |
+      |                             |                        |          <r> |            <r> |            <r> |
+      |-----------------------------+------------------------+--------------+----------------+----------------|
+      | Operating Income\\nbsp$^\\dagger$        |                        |         |       |                 |
+      | Operating Expense\\nbsp$^\\dagger$       |                        |  |   |                            |
+      |                             |                        | ------------ | -------------- | -------------- |
+      |                             | Net Income (Loss)\\nbsp$^\\dag$  |  |         |                         |
+      |                             |                        |              |                |                |
+      | Transfer to Reserves        |                        |              |       |                         |
+      | Transfer to Cap Improvement |                        |              |     |                           |
+      |                             |                        | ------------ | -------------- | -------------- |
+      |                             | Net after transfer\\nbsp$^\\dag$ |  |                  |                |
+      |                             |                        |              |                |                |
+      | *Assessment Collection*     |                        |              |                |                |
+      |-----------------------------+------------------------+--------------+----------------+----------------|
+
+b) Issues:
+      + Reserve Expenditures this month:
+        |                              | | *Actual* | *Actual* | *Planned* |
+        |                              | |  *Month* |    *YTD* |    *YTD*  |
+        |                              | |      <r> |      <r> |       <r> |
+        | Roads                        | |          |          |           |
+        | Environmental & Conservation | |          |          |           |
+        | Amenities                    | |          |          |           |
+        | Controlled Access            | |          |          |           |
+      + Delinquencies
+        |                                        <r> |    <r> |
+        |            Delinquent HOA Assessments\\nbsp $^\\ddag$ |        |
+        |                                      2024: |  |
+        |                   Delinquency Rate - 2024: |  |
+        |                                            |        |
+        |       Delinquent Neighborhood Assessments: |        |
+        |                                      2024: |    |
+
+       \\\\
+      {{{treasurer_footnotes(Collection Letters are automatically sent by CAM at the appropriate time.\\\\
+      \\\\
+      $\\dagger$ Not Including Neighborhoods and Social Committee\\\\
+      $\\ddag$ Does not include late fees or Neighborhood Assessments)}}}
+c) Reserve Fund Investments as of `(with-temp-buffer (call-process "~/bin/pdate" nil t nil "-t" "last day of previous month" "-f" "%B %e, %Y" )(buffer-string))`:
+      |                            | *Instrument* | *Maturity Date* |     *Amount* | *Interest Rate*           |
+      | <l>                        | <l>          |      <c>        |        <r>   | <l>                       |
+      |----------------------------+--------------+---------------+------------+-------------------------------|
+      | Reserve Fund               | Money Market |      n/a      |            | \\nbsp$^\\maltese$            |
+      |                            | Cash         |               |            |                               |
+      |                            |              |               |            |                               |
+      |                            |              |               |            |                               |
+      |                            |              |               |            |                               |
+      |                            |              |               |            |                               |
+      |                            |              |               |            |                               |
+      |                            |              |               |            |                               |
+      |                            |              |               |            |                               |
+      |                            |              |               |            |                               |
+      | Total Edward Jones         |              |               |            |                               |
+      |                            |              |               |            |                               |
+      | Reserves Checking Account  |              |               |            | \\nbsp$^\\maltese$            |
+      | Reserves ICS Account       |              |               |            | \\nbsp$^\\maltese$            |
+      |                            |              |               |  --------- |                               |
+      | Total Reserve - Banks      |              |               |            |                               |
+      |                            |              |               |            |                               |
+      | Total Reserve Fund         |              |               |            |                               |
+      |----------------------------+--------------+---------------+------------+-------------------------------|
+      | Cap Improvement Fund       |              |               |            |                               |
+      |                            | Money Market |      n/a      |            | \\nbsp$^\\maltese$            |
+      |                            | Cash         |               |            |                               |
+      |                            |              |               |            |                               |
+      |                            |              |               |  --------- |                               |
+      | Total Cap Improvement Fund |              |               |            |                               |
+      |----------------------------+--------------+---------------+------------+-------------------------------|
+      | Operating Funds            |              |               |            |                               |
+      |                            | Money Market |      n/a      |            |                               |
+      |                            |              |               |  --------- |                               |
+      | Total Operating Funds      |              |               |            |                               |
+      |----------------------------+--------------+---------------+------------+-------------------------------|
+
+      $\\maltese$ Can change daily.\\\\
+
+    \\\\
+d)  [[https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/current-rates][Current CD rates]]
+
+    | Duration  | Interest Rate |
+    |       <r> |      <c>      |
+    |-----------+---------------|
+    | 30 day    |             % |
+    | 3 months  |             % |
+    | 6 months  |             % |
+    | 9 months  |             % |
+    | 12 months |             % |
+    |-----------+---------------|
+**** 
+**** 
+**** Board Update [Hal Manasa]
+- 
+**** Comments from committee liaisons
+a) Grounds [John Edwards]
+     1. 
+b) Roads [Lou Dixon]
+     1. 
+c) Amenities [Jo Ann Merfeld]
+     1. 
+d) Controlled access [Ulana Bilynsky]
+     1. 
+e) Environmental and Conservation [Jim Ewing (interim)]
+     1. 
+**** Next Committee Meeting
+\\\\
+The committee scheduled `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-M" "+1" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))` at 3:00pm in the Clubhouse library for its next meeting.
+**** Meeting Adjourned: X:XX pm

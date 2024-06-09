@@ -1,0 +1,10 @@
+# key: finance-todo
+# name: finance-todo
+# binding: C-c d
+
+# --
+#+call: todo(
+  who="$1",
+  what="$2",
+  when="$3"
+)

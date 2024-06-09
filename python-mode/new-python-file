@@ -1,0 +1,42 @@
+# key: new-python-file
+# name: new-python-file
+# --
+#!/usr/bin/env python3
+# File last changed: <2024-05-23 Thu 12:22:32>
+"""
+Usage: `(file-name-nondirectory (buffer-file-name))` --help | [options] [<file>...]
+
+Options:
+  -f --field=FIELDNUM            field number to extract (one-based) [default: 1]
+  -d --debug                     display debug information
+  -v --verbose                   display extra information
+
+"""
+
+import sys
+from typing import List, Set, Dict, Tuple, Optional
+from docopt import docopt
+from prog_utils import ProgInfo, log, trace
+
+
+def main():
+  'The main routine.'
+  version = '0.1'
+  prog_name = '"`(file-name-nondirectory (buffer-file-name))`"'
+  arguments = docopt(__doc__, version= prog_name + ' v' + version)
+  prog: ProgInfo = ProgInfo(prog_name, version, arguments)
+  if arguments['--verbose']:
+      log(prog, \"version: {}\".format(prog.version))
+      log(prog, \"arguments:\n{}\".format(prog.arguments))
+
+
+if __name__ == '__main__':
+  main()
+
+Local Variables:
+time-stamp-line-limit: 10
+time-stamp-format: "<%Y-%02m-%02d %3a %02H:%02M:%02S>"
+time-stamp-active: t
+time-stamp-start: "File last changed:[ \t]+"
+time-stamp-end: "$"
+End:

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: org-table-frame-all
+# key: org-table-frame-all
+# --
+#+ATTR_HTML: :border 2 :rules all :frame all
+#+NAME: $1
+|   |         |  | | TOTAL  |
+|-- |---------+--+-+--------|
+| # |         |  | |        |
+| # |         |  | |        |
+| # |         |  | |        |
+|-- |---------+--+-+--------|
+| # | *TOTAL* |  | |        |
+#+TBLFM: @<<$>..@>>$>=vsum($<<<..$>>)::@>$<<<..@>$>=vsum(@I..II)

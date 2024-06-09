@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: finance-motion
+# key: finance-motion
+# binding: C-c m
+# --
+#+call: motion(
+    first="$1"
+    second="$2"
+    text="On behalf of the Budget and Finance Committee, I move the Board $3",
+    ayes=`(bnf-count-present-list-entries)`,
+    nayes=0,
+    abstains=0
+)

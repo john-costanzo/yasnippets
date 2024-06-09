@@ -1,0 +1,32 @@
+# key: 
+# binding: C-c a
+# name: finance-agenda
+# expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
+# --
+**** Published
+Budget and Finance Committee `(with-temp-buffer
+  (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%B %Y" )(buffer-string))` Meeting Agenda
+When:  `(with-temp-buffer
+  (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))` at 3 p.m.
+Where: clubhouse library
+
+Committee Members:
+    •  Jim Ewing, Chair
+    •  Jo Ann Merfeld, Co-chair and Board Treasurer
+    •  Ulana Bilynsky, Assistant Board Treasurer
+    •  Linda Schwandt, Assistant Board Treasurer
+    •  John Costanzo, Secretary
+    •  Louis Dixon
+    •  John Edwards
+    •  Jimmy McCutcheon
+    •  Dennis Thompson
+    •  Hal Manasa, Board Liaison
+
+Discussion Topics:
+    •  Confirm meeting minutes from `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tue" "-M" "-1" "-f" "%B %Y" )(buffer-string))` meeting
+    •  Treasurer's report
+    •  $1
+    •  
+    •  
+    •  Update from committee liaisons
+    •  Next meeting `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-M" "+1" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))` at 3:00 p.m. in the clubhouse library
