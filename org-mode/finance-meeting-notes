@@ -7,7 +7,7 @@
   (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%B %Y" )(buffer-string))` Meeting Minutes
 
 {{{bnf_notes_title(`(with-temp-buffer (call-process "~/bin/pdate" nil t nil "-t" "'second Tuesday of the month'" "-f" "%A\\, %B %e\\, %Y" )(buffer-string))`)}}}
-**** Meeting Called to Order: 3:00 pm
+**** Meeting Called to Order: 3:00 p.m.
 **** Committee Members
 \\\\
 ***** Present:
@@ -136,5 +136,5 @@ e) Environmental and Conservation [Jim Ewing (interim)]
      1. 
 **** Next Committee Meeting
 \\\\
-The committee scheduled `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-M" "+1" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))` at 3:00pm in the Clubhouse library for its next meeting.
+The committee scheduled `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-M" "+1" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))` at 3:00 p.m. in the Clubhouse library for its next meeting.
 **** Meeting Adjourned: X:XX pm
