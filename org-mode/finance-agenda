@@ -7,7 +7,7 @@
 Budget and Finance Committee `(with-temp-buffer
   (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%B %Y" )(buffer-string))` Meeting Agenda
 When:  `(with-temp-buffer
-  (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))` at 3 p.m.
+  (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))`, at 3 p.m.
 Where: clubhouse library
 
 Committee Members:
@@ -22,6 +22,7 @@ Committee Members:
     •  Dennis Thompson
     •  Hal Manasa, Board Liaison
 
+
 Discussion Topics:
     •  Confirm meeting minutes from `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tue" "-M" "-1" "-f" "%B %Y" )(buffer-string))` meeting
     •  Treasurer's report
@@ -29,4 +30,5 @@ Discussion Topics:
     •  
     •  
     •  Update from committee liaisons
-    •  Next meeting `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-M" "+1" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))` at 3:00 p.m. in the clubhouse library
+
+Next meeting: `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-M" "+1" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))`, at 3:00 p.m. in the clubhouse library
