@@ -3,8 +3,11 @@
 # name: finance-agenda
 # expand-env: ((yas-indent-line 'fixed) (yas-wrap-around-region 'nil))
 # --
+*** Agenda
+**** Jim's agenda
+
 **** Published
-Budget and Finance Committee `(with-temp-buffer
+Budget and Finance Committee: `(with-temp-buffer
   (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%B %Y" )(buffer-string))` Meeting Agenda
 When:  `(with-temp-buffer
   (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))`, at 3 p.m.
