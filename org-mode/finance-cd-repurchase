@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: finance-cd-repurchase
+# key: finance
+# --
+   #+call: motion(
+   first="",
+   second="",
+   text="On behalf of the Budget and Finance Committee, I move we purchase CDs in the amount of $312,000 for XX months at at least a rate of Y.Y%",
+   ayes=7,
+   nayes=0,
+   abstains=0
+   )
