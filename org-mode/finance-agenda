@@ -13,6 +13,7 @@ When:  `(with-temp-buffer
   (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))`, at 3 p.m.
 Where: clubhouse library
 
+
 Committee Members:
     •  Jim Ewing, Chair
     •  Jo Ann Merfeld, Co-chair and Board Treasurer
@@ -27,7 +28,7 @@ Committee Members:
 
 
 Discussion Topics:
-    •  Confirm meeting minutes from `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tue" "-M" "-1" "-f" "%B %Y" )(buffer-string))` meeting
+    •  Approve meeting minutes from `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tue" "-M" "-1" "-f" "%B %Y" )(buffer-string))` meeting
     •  Treasurer's report
     •  $1
     •  
