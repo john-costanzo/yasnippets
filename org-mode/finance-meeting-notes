@@ -14,7 +14,6 @@
 - Jim Ewing, /Chair/
 - Jo Ann Merfeld, /Co-chair and Board Treasurer/
 - Ulana Bilynsky, /Assistant Board Treasurer/
-- Linda Schwandt, /Assistant Board Treasurer/
 - John Costanzo, /Secretary/
 - Louis Dixon
 - John Edwards
@@ -65,14 +64,13 @@ b) Issues:
         |       Delinquent Neighborhood Assessments:            |        |
         |                                      2024:            |        |
 
-       \\\\
       {{{treasurer_footnotes(Collection Letters are automatically sent by CAM at the appropriate time.\\\\
       \\\\
-      $\\dagger$ Not Including Neighborhoods and Social Committee\\\\
-      $\\ddag$ Does not include late fees or Neighborhood Assessments)}}}
+          $\\dagger$ Not Including Neighborhoods and Social Committee\\\\
+          $\\ddag$ Does not include late fees or Neighborhood Assessments)}}}
 c) Reserve Fund Investments as of `(with-temp-buffer (call-process "~/bin/pdate" nil t nil "-t" "last day of previous month" "-f" "%B %e, %Y" )(buffer-string))`:
       |                           | | *Instrument* | *Maturity Date* | *Amount* | *Interest Rate*           |
-      | <l>                       | | <l>          |      <c>        |    <r>   | <l>                       |
+      | <l>                       | | <r>          |      <c>        |    <r>   | <l>                       |
       |---------------------------+-+--------------+---------------+------------+---------------------------|
       | Reserve Fund              | | Money Market |      n/a      |            | \\nbsp$^\\maltese$        |
       |                           | | Cash         |               |            |                           |
