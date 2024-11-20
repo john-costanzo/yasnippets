@@ -8,7 +8,7 @@
 
 {{{bnf_notes_title(`(with-temp-buffer (call-process "~/bin/pdate" nil t nil "-t" "'second Tuesday of the month'" "-f" "%A\\, %B %e\\, %Y" )(buffer-string))`)}}}
 **** Meeting Called to Order: 3:00 p.m.
-**** Committee Members
+**** Attendees
 \\\\
 ***** Present:
 - Jim Ewing, /Chair/
@@ -106,15 +106,15 @@ c) Reserve Fund Investments as of `(with-temp-buffer (call-process "~/bin/pdate"
     \\\\
 d)  [[https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/current-rates][Current CD rates]]
 
-    | Duration  | Interest Rate |
-    |       <r> |      <c>      |
-    |-----------+---------------|
-    | 30 day    |             % |
-    | 3 months  |             % |
-    | 6 months  |             % |
-    | 9 months  |             % |
-    | 12 months |             % |
-    |-----------+---------------|
+       | Duration  | Interest Rate |
+       |       <r> |      <c>      |
+       |-----------+---------------|
+       | 30 day    |             % |
+       | 3 months  |             % |
+       | 6 months  |             % |
+       | 9 months  |             % |
+       | 12 months |             % |
+       |-----------+---------------|
 **** 
 **** 
 **** Board Update [Hal Manasa]
