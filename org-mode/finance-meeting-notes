@@ -59,11 +59,11 @@ b) Issues:
       + Delinquencies
         |                                        <r> |    <r> |
         |            Delinquent HOA Assessments\\nbsp $^\\ddag$ |        |
-        |                                      2024:            |        |
-        |                   Delinquency Rate - 2024:            |        |
+        |                                      `(with-temp-buffer (call-process "/usr/bin/date" nil t nil "+%Y" )(buffer-substring-no-properties 1 5))`:            |        |
+        |                   Delinquency Rate - `(with-temp-buffer (call-process "/usr/bin/date" nil t nil "+%Y" )(buffer-substring-no-properties 1 5))`:            |        |
         |                                                       |        |
         |       Delinquent Neighborhood Assessments:            |        |
-        |                                      2024:            |        |
+        |                                      `(with-temp-buffer (call-process "/usr/bin/date" nil t nil "+%Y" )(buffer-substring-no-properties 1 5))`:            |        |
 
       {{{treasurer_footnotes(Collection Letters are automatically sent by CAM at the appropriate time.\\\\
       \\\\
