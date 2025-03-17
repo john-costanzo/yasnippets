@@ -7,20 +7,20 @@
   (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%B %Y" )(buffer-string))` Meeting Minutes
 
 {{{bnf_notes_title(`(with-temp-buffer (call-process "~/bin/pdate" nil t nil "-t" "'second Tuesday of the month'" "-f" "%A\\, %B %e\\, %Y" )(buffer-string))`)}}}
-**** Meeting Called to Order: 2:00 p.m.
+**** Meeting Called to Order: 2:30 p.m.
 **** Attendees
 \\\\
 ***** Present:
 - Jim Ewing, /Chair/
-- Jo Ann Merfeld, /Co-chair and Board Treasurer/
-- Donna McDade, /Assistant Board Treasurer/
+- Jo Ann Merfeld, /Co-chair/
+- Donna McDade, /Board Treasurer/
 - Ulana Bilynsky, /Assistant Board Treasurer/
 - John Costanzo, /Secretary/
 - Louis Dixon
 - John Edwards
 - Jimmy McCutcheon
 - Dennis Thompson
-- Hal Manasa, /Board Liaison/
+- XXX, /Board Liaison/
 - Paul Harris, /Board Member/
 ***** Absent:
 - 
@@ -133,5 +133,5 @@ e) Environmental and Conservation [Jim Ewing (interim)]
      1. 
 **** Next Committee Meeting
 \\\\
-The committee scheduled `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-M" "+1" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))` at 2:00 p.m. in the Clubhouse library for its next meeting.
+The committee scheduled `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-M" "+1" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))` at 2:30 p.m. in the Clubhouse library for its next meeting.
 **** Meeting Adjourned: X:XX pm
