@@ -1,0 +1,54 @@
+# key: Crossword Puzzle Solution
+# name: Carriage Post Crossword Puzzle Solution
+# binding: C-c s
+# --
+*** Solution write up $1
+- Title: :: [[https://www.cphassn.org/editor_upload/File/Carriage%20Post/2023/$1.pdf][$1]]
+
+- Constructed by: :: John Costanzo
+
+- Theme: :: $3
+
+
+#+begin_latex
+\mdfdefinestyle{mystyle}{leftmargin=0cm,linecolor=gray!0, backgroundcolor=gray!30,roundcorner=8pt}
+\begin{mdframed}[style=mystyle]
+#+end_latex
+
+#+BEGIN_CENTER
+\faIcon[thin]{clipboard} *A note from the puzzle constructor*
+#+END_CENTER
+
+Below, you'll find a solution to [[`(current-carriage-post-url)`][the crossword puzzle]] that appeared on page $2 of the `(month-to-season (with-temp-buffer (call-process "/bin/date" nil t nil  "+%m" )(buffer-string)))` `(with-temp-buffer (call-process "/bin/date" nil t nil  "+%Y" )(string-trim-right (buffer-string)))` edition of the /Carriage Park Post/. I also try to explain some of the more cryptic clues.\\\\
+
+Please email [[mailto:jncostanzo@gmail.com?subject=Carriage%20Post%20Crossword%20Puzzle%20Feedback][jncostanzo@gmail.com]] with comments on the crossword puzzle; I’d appreciating learning what you think about this or any of the crossword puzzles.\\\\
+
+Thanks.\\\\
+
+#+BEGIN_center
+#+ATTR_LaTeX: :height 0.15\textwidth :center
+[[~/Images/JC headshot 5 (cropped) removebg.png]]
+\qquad
+#+ATTR_LaTeX: :height 0.15\textwidth :center
+[[~/Images/JC Crossword Logo.jpg]]
+#+END_center
+
+#+begin_latex
+\end{mdframed}
+#+end_latex
+
+***** Themed Answers
+****** Across
+- $0
+****** Down
+-
+-----
+
+***** Other Tricky Clues
+****** Across
+-
+****** Down
+-
+#+ATTR_LATEX: :width 7in
+
+[[/home/jncostanzo/Downloads/$1 (solution).png]]
