@@ -20,14 +20,14 @@
 - John Edwards
 - Jimmy McCutcheon
 - Dennis Thompson
-- XXX, /Board Liaison/
+- Greg Heimburg, /Board Liaison/
 - Paul Harris, /Board Member/
 ***** Absent:
 - 
 **** Approval of previous meeting’s minutes
 \\\\
 The committee approved the `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tue" "-M" "-1" "-f" "%B %Y" )(buffer-string))` meeting minutes as posted.
-**** Treasurer’s Report [Jo Ann Merfeld]
+**** Treasurer’s Report [Donna McDade]
     \\\\
 a) Treasurer\'s Monthly Report as of `(with-temp-buffer (call-process "~/bin/pdate" nil t nil "-t" "last day of previous month" "-f" "%B %e, %Y" )(buffer-string))`:
       |                             |                        |     *Actual* |       *Actual* |       *Budget* |
@@ -64,7 +64,6 @@ b) Issues:
         |                                                       |        |
         |       Delinquent Neighborhood Assessments:            |        |
         |                                      `(with-temp-buffer (call-process "/usr/bin/date" nil t nil "+%Y" )(buffer-substring-no-properties 1 5))`:            |        |
-
       {{{treasurer_footnotes(Collection Letters are automatically sent by CAM at the appropriate time.\\\\
       \\\\
           $\\dagger$ Not Including Neighborhoods and Social Committee\\\\
@@ -118,7 +117,7 @@ d)  [[https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/c
        |-----------+---------------|
 **** 
 **** 
-**** Board Update [Hal Manasa]
+**** Board Update [Greg Heimburg]
 - 
 **** Comments from committee liaisons
 a) Grounds [John Edwards]
