@@ -7,6 +7,16 @@
   (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%B %Y" )(buffer-string))` Meeting Minutes
 
 {{{bnf_notes_title(`(with-temp-buffer (call-process "~/bin/pdate" nil t nil "-t" "'second Tuesday of the month'" "-f" "%A\\, %B %e\\, %Y" )(buffer-string))`)}}}
+**** [[https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/current-rates][CD rates]]                                                   :noexport:
+   #+NAME: interest-rates-`(concat (with-temp-buffer (call-process "/bin/date" nil t nil "+%Y-%m" )(buffer-string)) "   | Duration  | Interest Rate |")`
+   |       <r> |      <c>      |
+   |-----------+---------------|
+   | 30 day    |             % |
+   | 3 months  |             % |
+   | 6 months  |             % |
+   | 9 months  |             % |
+   | 12 months |             % |
+   |-----------+---------------|
 **** Meeting Called to Order: 2:30 p.m.
 **** Attendees
 \\\\
@@ -104,17 +114,20 @@ c) Reserve Fund Investments as of `(with-temp-buffer (call-process "~/bin/pdate"
       $\\maltese$ Can change daily.\\\\
 
     \\\\
-d)  [[https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/current-rates][Current CD rates]]
+d) [[https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/current-rates][Current Edward Jones CD rates]]
+  #+BEGIN_SRC python :results output :exports results :var data=interest-rates-`(with-temp-buffer (call-process "/bin/date" nil t nil "+%Y-%m" )(buffer-string))`
+from plot_interest_rates import plot_interest_rates
+plot_interest_rates(data)
+#+END_SRC
 
-       | Duration  | Interest Rate |
-       |       <r> |      <c>      |
-       |-----------+---------------|
-       | 30 day    |             % |
-       | 3 months  |             % |
-       | 6 months  |             % |
-       | 9 months  |             % |
-       | 12 months |             % |
-       |-----------+---------------|
+#+BEGIN_EXPORT latex
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.5\textwidth]{/tmp/interest_rates_plot.png}
+\end{figure}
+#+END_EXPORT
+
+
 **** 
 **** 
 **** Board Update [Greg Heimburg]
