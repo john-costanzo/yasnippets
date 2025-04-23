@@ -38,9 +38,8 @@
 \\\\
 The committee approved the `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tue" "-M" "-1" "-f" "%B %Y" )(buffer-string))` meeting minutes as posted.
 **** Treasurer’s Report [Donna McDade]
-    \\\\
 a) Treasurer\'s Monthly Report as of `(with-temp-buffer (call-process "~/bin/pdate" nil t nil "-t" "last day of previous month" "-f" "%B %e, %Y" )(buffer-string))`:
-      |                             |                        |     *Actual* |       *Actual* |       *Budget* |
+   #+NAME: treasurers-report-`(concat (with-temp-buffer (call-process "/bin/date" nil t nil "+%Y-%m" )(buffer-string)) "      |                             |                        |     *Actual* |       *Actual* |       *Budget* |")`
       |                             |                        |      *Month* |          *YTD* |          *YTD* |
       |                             |                        |          <r> |            <r> |            <r> |
       |-----------------------------+------------------------+--------------+----------------+----------------|
@@ -56,7 +55,16 @@ a) Treasurer\'s Monthly Report as of `(with-temp-buffer (call-process "~/bin/pda
       |                             |                        |              |                |                |
       | *Assessment Collection*     |                        |              |                |                |
       |-----------------------------+------------------------+--------------+----------------+----------------|
-
+   #+BEGIN_SRC python :results output :exports results :var data=treasurers-report-`(with-temp-buffer (call-process "/bin/date" nil t nil "+%Y-%m" )(buffer-string))`
+     from plot_treasurers_report import plot_treasurers_report
+     plot_treasurers_report(data, '/tmp/spending_vs_budget_plot.png')
+   #+END_SRC
+   #+BEGIN_EXPORT latex
+   \begin{figure}[h!]
+   \centering
+   \includegraphics[width=\textwidth]{/tmp/spending_vs_budget_plot.png}
+   \end{figure}
+   #+END_EXPORT
 b) Issues:
       + Reserve Expenditures this month:
         |                              | | *Actual* | *Actual* | *Planned* |
@@ -115,19 +123,17 @@ c) Reserve Fund Investments as of `(with-temp-buffer (call-process "~/bin/pdate"
 
     \\\\
 d) [[https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/current-rates][Current Edward Jones CD rates]]
-  #+BEGIN_SRC python :results output :exports results :var data=interest-rates-`(with-temp-buffer (call-process "/bin/date" nil t nil "+%Y-%m" )(buffer-string))`
-from plot_interest_rates import plot_interest_rates
-plot_interest_rates(data)
-#+END_SRC
+   #+BEGIN_SRC python :results output :exports results :var data=interest-rates-`(with-temp-buffer (call-process "/bin/date" nil t nil "+%Y-%m" )(buffer-string))`
+     from plot_interest_rates import plot_interest_rates
+     plot_interest_rates(data,'/tmp/interest_rates_plot.png')
+     #+END_SRC
 
-#+BEGIN_EXPORT latex
-\begin{figure}[h!]
-\centering
-\includegraphics[width=0.5\textwidth]{/tmp/interest_rates_plot.png}
-\end{figure}
-#+END_EXPORT
-
-
+     #+BEGIN_EXPORT latex
+     \begin{figure}[h!]
+     \centering
+     \includegraphics[width=0.5\textwidth]{/tmp/interest_rates_plot.png}
+     \end{figure}
+     #+END_EXPORT
 **** 
 **** 
 **** Board Update [Greg Heimburg]
