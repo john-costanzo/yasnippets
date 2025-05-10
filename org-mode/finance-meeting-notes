@@ -47,12 +47,10 @@ a) Treasurer\'s Monthly Report as of `(with-temp-buffer (call-process "~/bin/pda
       | Operating Expense\\nbsp$^\\dagger$       |                        |  |   |                            |
       |                             |                        | ------------ | -------------- | -------------- |
       |                             | Net Income (Loss)\\nbsp$^\\dag$  |  |         |                         |
-      |                             |                        |              |                |                |
-      | Transfer to Reserves        |                        |              |       |                         |
+      | Transfer to Restricted Reserves        |                        |              |       |                         |
       | Transfer to Cap Improvement |                        |              |     |                           |
       |                             |                        | ------------ | -------------- | -------------- |
       |                             | Net after transfer\\nbsp$^\\dag$ |  |                  |                |
-      |                             |                        |              |                |                |
       | *Assessment Collection*     |                        |              |                |                |
       |-----------------------------+------------------------+--------------+----------------+----------------|
    #+BEGIN_SRC python :results output :exports results :var data=treasurers-report-`(with-temp-buffer (call-process "/bin/date" nil t nil "+%Y-%m" )(buffer-string))`
@@ -66,7 +64,7 @@ a) Treasurer\'s Monthly Report as of `(with-temp-buffer (call-process "~/bin/pda
    \end{figure}
    #+END_EXPORT
 b) Issues:
-      + Reserve Expenditures this month:
+      + Restricted Reserve Expenditures this month:
         |                              | | *Actual* | *Actual* | *Planned* |
         |                              | |  *Month* |    *YTD* |    *YTD*  |
         |                              | |      <r> |      <r> |       <r> |
@@ -86,11 +84,11 @@ b) Issues:
       \\\\
           $\\dagger$ Not Including Neighborhoods and Social Committee\\\\
           $\\ddag$ Does not include late fees or Neighborhood Assessments)}}}
-c) Reserve Fund Investments as of `(with-temp-buffer (call-process "~/bin/pdate" nil t nil "-t" "last day of previous month" "-f" "%B %e, %Y" )(buffer-string))`:
+c) Restricted Reserve Fund Investments as of `(with-temp-buffer (call-process "~/bin/pdate" nil t nil "-t" "last day of previous month" "-f" "%B %e, %Y" )(buffer-string))`:
       |                           | | *Instrument* | *Maturity Date* | *Amount* | *Interest Rate*           |
       | <l>                       | | <r>          |      <c>        |    <r>   | <l>                       |
       |---------------------------+-+--------------+---------------+------------+---------------------------|
-      | Reserve Fund              | | Money Market |      n/a      |            | \\nbsp$^\\maltese$        |
+      | Restricted Reserve Fund              | | Money Market |      n/a      |            | \\nbsp$^\\maltese$        |
       |                           | | Cash         |               |            |                           |
       |                           | |              |               |            |                           |
       |                           | |              |               |            |                           |
@@ -101,22 +99,15 @@ c) Reserve Fund Investments as of `(with-temp-buffer (call-process "~/bin/pdate"
       |                           | |              |               |            |                           |
       |                           | |              |               |            |                           |
       | Total Edward Jones        | |              |               |            |                           |
-      |                           | |              |               |            |                           |
-      | Reserves Checking Account | |              |               |            | \\nbsp$^\\maltese$        |
-      | Reserves ICS Account      | |              |               |            | \\nbsp$^\\maltese$        |
-      | Total Reserve - Banks     | |              |               |            |                           |
-      |                           | |              |               |            |                           |
-      | Total Reserve Fund        | |              |               |            |                           |
+      | Restricted Reserves Checking Account | |              |               |            | \\nbsp$^\\maltese$        |
+      | Restricted Reserves ICS Account      | |              |               |            | \\nbsp$^\\maltese$        |
+      | Total Restricted Reserve - Banks     | |              |               |            |                           |
+      | Total Restricted Reserve Fund        | |              |               |            |                           |
       |---------------------------+-+--------------+---------------+------------+---------------------------|
       | Cap Improvement Fund      | |              |               |            |                           |
       |                           | |              |               |            | \\nbsp$^\\maltese$        |
       |                           | | Cash         |               |            |                           |
-      |                           | |              |               |            |                           |
       | Total Cap Improvement Fund| |              |               |            |                           |
-      |---------------------------+-+--------------+---------------+------------+---------------------------|
-      | Operating Funds           | |              |               |            |                           |
-      |                           | |              |               |            |                           |
-      | Total Operating Funds     | |              |               |            |                           |
       |---------------------------+-+--------------+---------------+------------+---------------------------|
 
       $\\maltese$ Can change daily.\\\\
