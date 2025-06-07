@@ -11,7 +11,7 @@ Budget and Finance Committee: `(with-temp-buffer
   (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%B %Y" )(buffer-string))` Meeting Agenda
 When:  `(with-temp-buffer
   (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))`, at 2:30 p.m.
-Where: clubhouse library
+Where: Clubhouse library
 
 
 Committee Members:
@@ -35,4 +35,4 @@ Discussion Topics:
     •  
     •  Update from committee liaisons
 
-Next meeting: `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-M" "+1" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))`, at 2:30 p.m. in the clubhouse library
+Next meeting: `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-M" "+1" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))`, at 2:30 p.m. in the Clubhouse library
