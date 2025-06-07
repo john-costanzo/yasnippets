@@ -3,7 +3,7 @@
 # binding: C-c s
 # --
 *** Solution write up $1
-- Title: :: [[https://www.cphassn.org/editor_upload/File/Carriage%20Post/2023/$1.pdf][$1]]
+- Title: :: [[https://www.cphassn.org/editor_upload/File/Carriage%20Post/`(with-temp-buffer (call-process "/bin/date" nil t nil  "+%Y" )(string-trim-right (buffer-string)))`/$1.pdf][$1]]
 
 - Constructed by: :: John Costanzo
 
