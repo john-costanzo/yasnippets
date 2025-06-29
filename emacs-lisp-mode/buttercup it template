@@ -1,0 +1,6 @@
+# key: nil
+# name: buttercup it template
+# binding: [3 105]
+# --
+  (it "$1"
+    (expect (FUNCTION_NAME "$1") :to-equal "$2"))
