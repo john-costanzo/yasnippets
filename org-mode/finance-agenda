@@ -29,10 +29,11 @@ Committee Members:
 
 Discussion Topics:
     •  Approve meeting minutes from `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-a" "Tue" "-M" "-1" "-f" "%B %Y" )(buffer-string))` meeting
-    •  Treasurer's report
+    •  Treasurer's report [Donna McDade]
     •  $1
     •  
     •  
+    •  Board update
     •  Update from committee liaisons
 
 Next meeting: `(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-o" "2" "-M" "+1" "-a" "Tu" "-f" "%A, %B %e, %Y" )(buffer-string))`, at 2:30 p.m. in the Clubhouse library
