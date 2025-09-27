@@ -26,7 +26,6 @@
 - Donna McDade, /Board Treasurer/
 - Ulana Bilynsky, /Assistant Board Treasurer/
 - John Costanzo, /Secretary/
-- Louis Dixon
 - John Edwards
 - Jimmy McCutcheon
 - Dennis Thompson
@@ -99,9 +98,11 @@ c) Restricted Reserve Fund Investments as of `(with-temp-buffer (call-process "~
       |                           | |              |               |            |                           |
       |                           | |              |               |            |                           |
       | Total Edward Jones        | |              |               |            |                           |
+      |                           | |              |               |            |                           |
       | Restricted Reserves Checking Account | |              |               |            | \\nbsp$^\\maltese$        |
       | Restricted Reserves ICS Account      | |              |               |            | \\nbsp$^\\maltese$        |
       | Total Restricted Reserve - Banks     | |              |               |            |                           |
+      |                           | |              |               |            |                           |
       | Total Restricted Reserve Fund        | |              |               |            |                           |
       |---------------------------+-+--------------+---------------+------------+---------------------------|
       | Cap Improvement Fund      | |              |               |            |                           |
