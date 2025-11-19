@@ -118,14 +118,13 @@ d) [[https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/cu
    #+BEGIN_SRC python :results output :exports results :var data=interest-rates-`(with-temp-buffer (call-process "/bin/date" nil t nil "+%Y-%m" )(buffer-string))`
      from plot_interest_rates import plot_interest_rates
      plot_interest_rates(data,'/tmp/interest_rates_plot.png')
-     #+END_SRC
-
-     #+BEGIN_EXPORT latex
+   #+END_SRC
+   #+BEGIN_EXPORT latex
      \begin{figure}[h!]
      \centering
      \includegraphics[width=0.5\textwidth]{/tmp/interest_rates_plot.png}
      \end{figure}
-     #+END_EXPORT
+   #+END_EXPORT
 **** 
 **** 
 **** Board Update [Greg Heimburg]
@@ -133,7 +132,7 @@ d) [[https://www.edwardjones.com/us-en/market-news-insights/stock-market-news/cu
 **** Comments from committee liaisons
 a) Grounds [John Edwards]
      1. 
-b) Roads [Lou Dixon]
+b) Roads [Ulana Bilynsky]
      1. 
 c) Amenities [Jo Ann Merfeld]
      1. 
