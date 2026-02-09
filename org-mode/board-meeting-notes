@@ -1,0 +1,14 @@
+# key: board-meeting-notes
+# name: board-meeting-notes
+# expand-env: ((yas-after-exit-snippet-hook (lambda () (org-table-map-tables 'org-table-align t))))
+# --
+** `(progn (org-insert-time-stamp (current-time) nil t) nil)` Meeting Minutes
+*** Notes
+- $1
+*** Questions
+1. 
+*** Actions
+**** TODO [] 
+**** TODO [] 
+**** TODO [] 
+**** TODO []
