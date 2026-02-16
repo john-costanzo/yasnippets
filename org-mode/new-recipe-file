@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: new-recipe-file
+# key: 
+# --
+#+STARTUP: showeverything
+* `(file-name-base (buffer-file-name))`
+** Ingredients:
+- $1
+** Method:
+1. $2
+** Credits:
+- date created: `(format-time-string "[%Y-%m-%d %a]")`
+- From 

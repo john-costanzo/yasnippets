@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: new-javascript-file
+# --
+// -*- mode: JavaScript; indent-tabs-mode: nil; -*-
+// File last changed: `(format-time-string "<%Y-%02m-%02d %3a %02H:%02M:%02S>")`
+
+/**
+ * A Google script function that $1
+ */
+
+$2
+
+// Local Variables:
+// time-stamp-line-limit: 10
+// time-stamp-format: "<%Y-%02m-%02d %3a %02H:%02M:%02S>"
+// time-stamp-active: t
+// time-stamp-start: "File last changed:[ \t]+"
+// time-stamp-end: "$"
+// End:
