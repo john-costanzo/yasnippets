@@ -1,6 +1,6 @@
 # key: finance-todo
 # name: finance-todo
-# binding: C-c d
+# binding: C-c w
 
 # --
 #+call: todo(
