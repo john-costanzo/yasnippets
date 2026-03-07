@@ -1,9 +1,8 @@
 # -*- mode: snippet -*-
 # name: finance-motion
 # key: finance-motion
-# binding: C-c m
 # --
-#+call: motion(
+#+call:motion(
     first="$1",
     second="$2",
     text="On behalf of the Budget and Finance Committee, I move the Board approve and post for a 30-day
