@@ -1,6 +1,5 @@
 # key: Crossword Puzzle Solution
 # name: Carriage Post Crossword Puzzle Solution
-# binding: C-c s
 # --
 *** Solution write up $1
 - Title: :: [[`(current-carriage-post-url)`][$1]]
