@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: bod-decision
+# binding: C-c d
+
+# --
+#+call: decision(
+  decision_text="$1"
+)
