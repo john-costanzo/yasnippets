@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: board-motion
+# key: #motion
+# --
+#motion(
+ first: "$1",
+	second: "$2",
+	motion_text: [I move that $3],
+	ayes: ${4:0},
+	nayes: ${5:0},
+	abstains: ${6:0},
+	chair_overrides: ${7:0}
+)

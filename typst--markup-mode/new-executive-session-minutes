@@ -1,0 +1,24 @@
+# -*- mode: snippet -*-
+# name: new-executive-session-minutes
+# key: new-executive-session-minutes
+# --
+#import "../Templates/CPHA minutes.typ": *
+
+#show: project.with(
+        purpose: "$1.",
+	date: "$2",
+	opentime: "???",
+	closetime: "???", 
+	present: (
+		"Paul Harris, President",
+		"Doreen Herina, Vice President",
+		"John Costanzo, Secretary",
+		"Ulana Bilynsky",
+		"Nancy Kaczor",
+		"Bonny Marsh",
+		"Dan Mahoney"
+		),
+	absent: (""),
+	//    authors: ("John Costanzo (Secretary, CPHA Board of Directors)",),
+	draft: true,
+)
