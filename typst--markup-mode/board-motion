@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: board-motion
-# key: #motion
+# key: #mot
 # --
 #motion(
  first: "$1",
