@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: new-executive-session-minutes
+# name: new-workshop-minutes
 # --
 #import "../Templates/CPHA minutes.typ": *
 
@@ -20,4 +20,5 @@
 	absent: (""),
 	//    authors: ("John Costanzo (Secretary, CPHA Board of Directors)",),
 	draft: true,
+	sessiontype: "Workshop",
 )
