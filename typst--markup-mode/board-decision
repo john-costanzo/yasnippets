@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
 # name: board-decision
-# key: #decision
+# key: #dec
 # --
 #decision([$1.])
