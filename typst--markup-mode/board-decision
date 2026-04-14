@@ -2,4 +2,4 @@
 # name: board-decision
 # key: #dec
 # --
-#decision([$1.])
+#decision([The Board decided to $1.])
