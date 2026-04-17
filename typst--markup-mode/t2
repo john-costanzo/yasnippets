@@ -1,5 +1,5 @@
-# key: ta2
-# name: ta2
+# key: t2
+# name: t2
 # --
 #align(center)[
     #warm-table(
@@ -10,4 +10,4 @@
       [$7], [$8],
       [$9], [$10],
     )
-    ]
+]
