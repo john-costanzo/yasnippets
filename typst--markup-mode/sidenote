@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: sidenote
+# key: sidenote
+# --
+#sidenote[$1]
