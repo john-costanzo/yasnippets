@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: pq
+# key: pq
+# --
+
+#pull-quote(
+	fill:         luma(240),
+	quote-color:  luma(180),
+	quote-size:   6em,
+	text-size:    1.15em,
+	radius:       14pt,
+	inset:        1.4em,
+	close-dx:     1.2em,
+	close-dy:     3.3em,
+	attribution:  none,           // ← optional — string or content
+	attr-size:    0.85em,         // ← attribution text size
+)[$1]
