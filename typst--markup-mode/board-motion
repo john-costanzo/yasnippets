@@ -3,9 +3,9 @@
 # key: #mot
 # --
 #motion(
- first: "$1",
-	second: "$2",
-	motion_text: [I move that $3],
+	motion_text: [I move that $1],
+	first: "$2",
+	second: "$3",
 	ayes: ${4:0},
 	nayes: ${5:0},
 	abstains: ${6:0},
