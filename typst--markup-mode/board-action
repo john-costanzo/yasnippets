@@ -1,0 +1,4 @@
+# key: #action
+# name: board-action
+# --
+#action("$1", "$2", when: ${3:none})
