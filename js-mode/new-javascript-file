@@ -2,7 +2,7 @@
 # name: new-javascript-file
 # --
 // -*- mode: JavaScript; indent-tabs-mode: nil; -*-
-// File last changed: `(format-time-string "<%Y-%02m-%02d %3a %02H:%02M:%02S>")`
+// File last changed: <2026-04-29 Wed 15:51:45>
 
 /**
  * A Google script function that $1
@@ -16,4 +16,5 @@ $2
 // time-stamp-active: t
 // time-stamp-start: "File last changed:[ \t]+"
 // time-stamp-end: "$"
-// End:
+// End:`(save-excursion
+  (normal-mode t)"")`
