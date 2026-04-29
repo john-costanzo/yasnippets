@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: new-executive-session-minutes
 # --
+// File last changed: `(insert (format-time-string "<%Y-%02m-%02d %3a %02H:%02M:%02S>"))`
 #import "../Templates/CPHA minutes.typ": *
 
 #show: project.with(
@@ -21,3 +22,12 @@
 	//    authors: ("John Costanzo (Secretary, CPHA Board of Directors)",),
 	draft: true,
 )
+
+// Local Variables:
+// time-stamp-line-limit: 10
+// time-stamp-format: "<%Y-%02m-%02d %3a %02H:%02M:%02S>"
+// time-stamp-active: t
+// time-stamp-start: "File last changed:[ \t]+"
+// time-stamp-end: "\$"
+// End:`(save-excursion
+  (normal-mode t)"")`
