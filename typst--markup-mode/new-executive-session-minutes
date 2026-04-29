@@ -8,7 +8,7 @@
         purpose: "$1.",
 	date: "$2",
 	opentime: "???",
-	closetime: "???", 
+	closetime: "???",
 	present: (
 		"Paul Harris, #emph[President]",
 		"Doreen Herina, #emph[Vice President]",
