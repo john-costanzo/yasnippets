@@ -1,0 +1,28 @@
+# -*- mode: snippet -*-
+# name: proxy
+# key: proxy
+# --
+#set text(14pt)
+${1:`(format-time-string "%B %-d, %Y")`}
+#v(3em)
+Subject: Proxy for CPHA on $1 on behalf of John Costanzo
+#v(3em)
+
+
+To: Paul Harris, President, CPHA Board of Directors
+#v(3em)
+
+I, John Costanzo, the undersigned, hereby designate $2 (the "Proxy") as my proxy with respect to my position on the CPHA Board of Directors and any associated votes.
+#v(1em)
+
+This designation of Proxy shall be effective for $1.
+#v(3em)
+
+
+Sincerely,
+#v(3em)
+
+
+John Costanzo
+
+CPHA Board member
