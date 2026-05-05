@@ -19,7 +19,7 @@
 		"Dan Mahoney"
 		),
 	absent: (""),
-	//    authors: ("John Costanzo (Secretary, CPHA Board of Directors)",),
+	//    authors: ("John Costanzo (Secretary,\n CPHA Board of Directors)",),
 	draft: true,
 	sessiontype: "Workshop",
 )
