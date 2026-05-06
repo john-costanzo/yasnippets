@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: hlink
+# key: hlink
+# --
+#hlink("$1")[$2]

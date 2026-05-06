@@ -12,6 +12,6 @@
 	inset:        1.4em,
 	close-dx:     1.2em,
 	close-dy:     3.3em,
-	attribution:  none,           // ← optional — string or content
+	attribution:  none,
 	attr-size:    0.85em,         // ← attribution text size
 )[$1]
