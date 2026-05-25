@@ -22,7 +22,7 @@
 	//    authors: ("John Costanzo (Secretary,\n CPHA Board of Directors)",),
 	draft: true,
 )
-
+$0
 // Local Variables:
 // time-stamp-line-limit: 10
 // time-stamp-format: "<%Y-%02m-%02d %3a %02H:%02M:%02S>"
