@@ -5,8 +5,8 @@
 #import "../Templates/CPHA minutes.typ": *
 
 #show: project.with(
-        purpose: "$1.",
-	date: "$2",
+        purpose: "",
+	date: "`(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-t" "next Tuesday" "-f" "%A, %B %e, %Y" )(buffer-string))`",
 	opentime: "???",
 	closetime: "???",
 	present: (
@@ -21,6 +21,7 @@
 	absent: (""),
 	//    authors: ("John Costanzo (Secretary,\n CPHA Board of Directors)",),
 	draft: true,
+	sessiontype: "Executive session",
 )
 $0
 // Local Variables:
