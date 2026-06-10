@@ -3,11 +3,8 @@
 # --
 *** Solution write up ``$1''
 - Title: :: [[`(current-carriage-post-url)`][$1]]
-
 - Constructed by: :: John Costanzo
-
 - Theme: :: $3
-
 
 #+begin_latex
 \mdfdefinestyle{mystyle}{leftmargin=0cm,linecolor=gray!0, backgroundcolor=gray!30,roundcorner=8pt}
