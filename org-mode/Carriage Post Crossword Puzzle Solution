@@ -1,7 +1,7 @@
 # key: Crossword Puzzle Solution
 # name: Carriage Post Crossword Puzzle Solution
 # --
-*** Solution write up $1
+*** Solution write up ``$1''
 - Title: :: [[`(current-carriage-post-url)`][$1]]
 
 - Constructed by: :: John Costanzo
