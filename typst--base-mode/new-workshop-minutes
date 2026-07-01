@@ -7,16 +7,16 @@
 #show: project.with(
         purpose: "",
 	date: "`(with-temp-buffer (call-process "~/bin/pdate" nil t nil  "-t" "next Tuesday" "-f" "%A, %B %e, %Y" )(buffer-string))`",
-	opentime: "???",
-	closetime: "???",
+	opentime: "4:00 PM",
+	closetime: "",
 	present: (
 		"Paul Harris, #emph[President]",
 		"Doreen Herina, #emph[Vice President]",
 		"John Costanzo, #emph[Secretary]",
 		"Ulana Bilynsky",
 		"Nancy Kaczor",
+		"Dan Mahoney",
 		"Bonny Marsh",
-		"Dan Mahoney"
 		),
 	absent: (""),
 	//    authors: ("John Costanzo (Secretary,\n CPHA Board of Directors)",),
@@ -30,5 +30,4 @@ $0
 // time-stamp-active: t
 // time-stamp-start: "File last changed:[ \t]+"
 // time-stamp-end: "\$"
-// End:`(save-excursion
-  (normal-mode t)"")`
+// End:
