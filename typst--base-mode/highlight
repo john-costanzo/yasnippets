@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: highlight
+# key: highlight
+# --
+#highlight(fill: yellow)[$1]
